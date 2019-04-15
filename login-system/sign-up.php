@@ -18,7 +18,7 @@ $user_type = mysqli_real_escape_string($conn,$_POST['user-type']);
 if($pass=$passcheck)
 {   // Password Encription
     $password = $conn->escape_string(password_hash($_POST['password'], PASSWORD_BCRYPT));
-    $hash = $conn->escape_string( md5( rand(0,1000) ) );
+    $hash = $conn->escape_string( md5( rand(0,1000)));
 
     // Check if user with that email already exists
     $result = $conn->query("SELECT * FROM users WHERE email='$email'");
@@ -58,7 +58,7 @@ if($pass=$passcheck)
             }
             elseif ($user_type=="Student"){
                 $sql_stud = "INSERT INTO student (user_id) VALUES ('$user_id')";
-                $query_staff = mysqli_query($conn,$sql_stud);
+                $query_student = mysqli_query($conn,$sql_stud);
             }
         }else {
             $_SESSION['message'] = "Error occur while signing up please try again.";

@@ -3,15 +3,15 @@
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title">Sign-up</h5>
+					<h5 class="modal-title display-4" style="font-size:30px;">Sign-up</h5>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					<span aria-hidden="true">&times;</span>
 					</button>
 				</div>
 				<div class="modal-body">
-					<form  method="POST" action="login-system/sign-up.php">    
+					<form  method="POST" action="login-system/sign-up.php">
 						<div class="form-row">
-							<div class="col"> 
+							<div class="col">
 								<label class="col-form-label">First Name</label>
 								<input type="text" class="form-control" name="first" placeholder="First name">
 							</div>
@@ -21,7 +21,7 @@
 							</div>
 						</div>
 						<div class="form-row">
-							<div class="col"> 
+							<div class="col">
 								<label class="col-form-label">Username</label>
 								<input type="text" class="form-control" name="username" placeholder="Username">
 							</div>
@@ -31,7 +31,7 @@
 							</div>
 						</div>
 						<div class="form-row">
-							<div class="col"> 
+							<div class="col">
 								<label class="col-form-label">Password</label>
 								<input type="password" class="form-control" name="password" placeholder="Password">
 							</div>
@@ -50,7 +50,7 @@
 						<div class="modal-footer">
 							<button type="submit" name="register" class="btn btn-dark">Sign-up</button>
 							<button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
-						</div>	
+						</div>
 					</form>
 				</div>
 			</div>
@@ -62,13 +62,13 @@
 		<div class="modal-dialog" role="document">
 		    <div class="modal-content">
 			    <div class="modal-header">
-				    <h5 class="modal-title">Sign-in</h5>
+				    <h5 class="modal-title display-4" style="font-size:30px;">Sign-in</h5>
 				    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 				    	<span aria-hidden="true">&times;</span>
 				    </button>
 			    </div>
 			    <div class="modal-body">
-				    <form method="POST" action="login-system/sign-in.php">    
+				    <form method="POST" action="login-system/sign-in.php">
 					    <div class="form-group">
 							<label class="col-form-label">E-mail</label>
 							<input type="email" class="form-control" name="email" placeholder="E-mail">
